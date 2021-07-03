@@ -1,0 +1,5 @@
+(library
+ (name cvrdt)
+ (public_name cvrdt)
+ (synopsis "State-based conflict-free replicated data types (CvRDT).")
+ (libraries base))

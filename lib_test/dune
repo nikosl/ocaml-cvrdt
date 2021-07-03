@@ -1,0 +1,15 @@
+(executable
+ (name test)
+ (libraries base cvrdt alcotest))
+
+(rule
+ (alias runtest)
+ (deps
+  (:x test.exe))
+ (action
+  (run %{x})))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
